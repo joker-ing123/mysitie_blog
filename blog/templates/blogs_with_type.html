@@ -1,0 +1,16 @@
+{% extends 'blog_list.html' %}
+
+{% block title %}
+    {{ blog_type.type_name }}
+{% endblock %}
+
+{% block header-extents %}
+    <link rel="stylesheet" href="/static/css/blog_list.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+{% endblock %}
+
+{% block nav_blog_active %}active{% endblock %}
+
+{% block blog_list_title %}分类：{{ blog_type.type_name }}{% endblock %}
+
+
